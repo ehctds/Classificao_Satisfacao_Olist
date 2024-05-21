@@ -5,12 +5,19 @@ Escolha do Dataset
 O dataset escolhido foi o olist_order_reviews_dataset.csv que contém 99.224 linhas com as seguintes colunas:
 
 review_id: Identificador único de cada avaliação.
+
 order_id: Identificador único do pedido associado à avaliação.
+
 review_score: Nota da avaliação (1 a 5).
+
 review_comment_title: Título do comentário.
+
 review_comment_message: Comentário opcional deixado pelo cliente.
+
 review_creation_date: Data de criação da avaliação.
+
 review_answer_timestamp: Data e hora em que a avaliação foi respondida.
+
 Tratamento dos Dados
 Os dados foram filtrados para manter apenas review_comment_message e review_score. Linhas com valores nulos em review_comment_message foram removidas. As colunas foram renomeadas para texto e review_score. O dataset resultante ficou com 40.997 linhas.
 
