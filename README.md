@@ -30,13 +30,17 @@ O dataset binário foi preparado para tokenização.
 Tokenização e Pré-processamento
 O texto foi transformado em sequências numéricas, ajustando o tamanho das sequências para 120. As palavras fora do vocabulário foram substituídas por um token especial <OOV>.
 
+
 Implementação da Rede Neural
+
 Baseado nos conceitos da dimensão VC e regra de ouro, optamos por utilizar duas camadas: a primeira com 31 neurônios e activation='tanh', e a segunda camada com 1 neurônio e activation='sigmoid' para a classificação binária.
 O otimizador Adam foi configurado com uma taxa de aprendizado de 0.01.
 A função de perda utilizada foi binary_crossentropy e a métrica de avaliação foi accuracy.
 Utilizou-se a técnica de early stopping para evitar overfitting.
 
+
 Implementação da Árvore de Decisão
+
 Construímos uma árvore de decisão, calculamos Ein e Eout e analisamos a existência de overfitting.
 Realizou-se a regularização do valor de alpha usando o algoritmo de Minimal Cost-Complexity com cross validation.
 
